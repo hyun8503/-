@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 반응형 웹 만들 때 필요 -->
+<title>Korean Language Center</title>
+<!-- <link rel="stylesheet" href="../css/before_login.css"> -->
+<style>
+img{display:block;max-width:100%;height:auto}
+
+.navbar-brand{float:left;height:50px;padding:15px 15px;font-size:18px;line-height:20px}
+.navbar-brand:focus,.navbar-brand:hover{text-decoration:none}
+.navbar-brand>img{display:block; width:30px; height: 30px;}  
+
+.navbar-left {float: left; list-style: none; display:inline;} /*일렬로 정렬, list-style은 뭐지? */
+
+.dropdown-menu {display:none;} /* 평상시에 드랍 메뉴가 안 보이게 하기  */
+.navbar-left li a:hover ul {display:block;} /* 마우스 클릭하면 드랍메뉴 보이게 하기 */
+.dropdown-menu li {margin:0; padding:0; border-bottom: 1px solid black;} 
+</style>
+</head>
+<body id="main" data-spy="scroll" data-target=".navbar" data-dffset="50">
+  <!-- 스크롤 내릴 때마다 타이틀 영역이 변경되면 네비게이션 포커스가 자동으로 이동되는 기능 : 어떻게 하지? without BootStrap -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="cotainer container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#main"><img src="01.jpg"></a>
+    </div><!-- navbar-header -->
+    <div class="navbar-collapse" id="myNavBar">
+     <ul class="navbar-nav navbar-left">
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">메뉴
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Basic Korean</a></li>
+          <li><a href="#">Intermediate Korean</a></li>
+          <li><a href="#">Advanced Korean</a></li>
+        </ul>
+        </li>
+      <li><a href="#main">HOME</a></li> 
+      <li><a href="#courses">COURSES</a></li> 
+      <li><a href="#teachers">TEACHERS</a></li> 
+      <li><a href="#contact">CONTACT</a></li>
+     </ul><!-- end navbar-left -->
+    </div>
+  </div>  
+</nav>
+
+
+
+</body>
+</html>

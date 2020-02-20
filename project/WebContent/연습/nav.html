@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+function showLayer(layerID){document.all[layerID].style.visibility="visible";}
+function hideLayer(layerID){document.all[layerID].style.visibility="hidden";}
+</script>
+<style>
+.navbar{position:fixed;
+        background-color:aqua;
+        width: 100%;
+        margin-left: auto;}
+    
+.navbar-left{float:left;}
+.at-navbar-brand{width:30px;
+                 height:30px;
+                 float:left;
+                 margin-bottom:5px;
+                 margin-top:5px;
+                 margin-left:5px; 
+                 margin-right:5px;}
+.at-navbar-brand > img {width: 30px;
+                        height: 30px;}
+a{text-decoration:none;} 
+.navbar-nav ul li{outline: solid black 1px; 
+                  list-style-type:none; 
+                  float:left; 
+                  margin-left:20px;}
+.navbar-nav ul li ul {display:none; outline: solid black 1px;} 
+.navbar-nav ul li:hover ul{display:block; outline: solid black 1px;} 
+
+.at-navbar-item{float:right;}
+.login {
+    width: 330px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    border: solid black 1px;
+    border-radius: 5px; 
+    background-color: white;
+    font: 60.5%  "Lucida Grande", Verdana, Helvetica, sans-serif;
+    font-size:14px;    
+}
+.login_img{
+	float: left;width:30px; height:30px;
+}
+
+.btnLogin{
+	width: 330px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    margin-left: auto;
+    padding: auto;
+    border: solid black 1px;
+    border-radius: 5px; 
+    background-color: red;
+    color: white;
+    font: 60.5%  "Lucida Grande", Verdana, Helvetica, sans-serif;
+    font-size:14px;  
+}
+
+.login_box{
+	width: 330px;
+    height: 30px;
+    line-height: 28px;
+}
+.forget{
+	font-size:10px;
+	color: green;
+}
+.x { 
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	border: solid black 1px;
+	margin: auto;
+}
+</style>
+</head>
+<body>
+<nav id="navbar" class="navbar">
+  <div class="navbar-left">
+<!--div1 --><div class="at-navbar-brand"><img src="../images/02.jpg"></div>
+<!--div2:메뉴 --><div class="navbar-nav">
+     <ul>
+     <li><a href="#">메뉴</a>
+       <ul>
+         <li><a href="#">초급한국어</a></li>
+         <li><a href="#">중급한국어</a></li>
+         <li><a href="#">고급한국어</a></li>     
+       </ul></li>
+     <li><a href="#main">HOME</a></li>
+     <li><a href="#courses">COURSES</a></li>
+     <li><a href="#teachers">TEACHERS</a></li>
+     <li><a href="#contact">CONTACT</a></li>
+     </ul> 
+    </div>
+  </div>
+  <div class="navbar-right">
+    <div class="at-navbar-item"><a href="#modalLayer" class="modalLink">Sign UP </a></div>
+    <div class="at-navbar-item"><a href="#modalLayer2" class="modalLink2"> Sign In</a></div>
+   </div>
+</nav> 
+</body>
+</html>

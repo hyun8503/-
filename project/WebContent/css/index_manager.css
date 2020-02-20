@@ -1,0 +1,12 @@
+@charset "UTF8";
+
+#section{top:15%; width:100%; margin:auto;}
+.contents {position:relative;
+	      top:100px;
+          text-align:center;}
+.manage_class{width:200px; 
+              height:200px; 
+              background-color:#ff9d9d; 
+              color:white; 
+              border-radius:10px;}
+              

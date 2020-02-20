@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>로그인 후 메인페이지</title>
+<link rel="stylesheet" href="../css/header.css">
+<link rel="stylesheet" href="../css/sidebar.css">
+<script src="../include/jquery-3.4.1.min.js"></script>
+<script src="../include/jquery-ui.min.js"></script>
+
+<script>
+$(function(){
+    var duration = 300;
+
+    var $sidebar = $('.sidebar');
+    var $sidebarButton = $sidebar.find('button').on('click', function(){
+        $sidebar.toggleClass('open');
+        if($sidebar.hasClass('open')){
+            $sidebar.stop(true).animate({right: '-10px'}, duration, 'easeOutBack');
+            $sidebarButton.find('span').text('close');
+        }else{
+            $sidebar.stop(true).animate({right: '-270px'}, duration, 'easeInBack');
+            $sidebarButton.find('span').text('My page');
+        };
+    });
+});
+</script>
+
+
+</head>
+<body>
+ <div id="main_navbar">
+   <div class="at-navbar-brand"><img src="01.jpg"></div>
+   <div class="at-navbar-item"><a href="#sidebar" class="sidebarLink"><img src="01.jpg"></div>
+
+ <div id="sidebar">  
+ <aside class="sidebar">
+   <div class="sidebar-content">
+   	<table>
+	   <tr><td>이름</td><td rowspan="2"><img src="01.jpg"></td></tr>
+	   <tr><td>현재 시간(GMT)</td></tr>
+	 </table>
+	    <hr>레슨 스케쥴
+	    <hr>회원정보변경
+	    <hr>로그아웃
+	    </div>
+     <button><span class="sidebar-btn">My page</span></button>
+    </aside>
+    </div>
+   
+
+</div>  
+</body>
+</html>

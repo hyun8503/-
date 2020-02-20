@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- IE 문서 모드 -->
+<title>JavaScript Carousel</title>
+<link rel="stylesheet" href="../css/js_carousel.css">
+<script src="../js/js_carousel.js"></script>
+</head>
+<body>
+  <h1 class="title">Making Carousel (JavaScript)</h1>
+  
+  <div id="container">
+   <div class="slide_wrap">
+    <div class="slide_box"><!-- overflow:hidden : 슬라이드 한개만 화면에 보이게 된다-->
+     <div class="slide_list clearfix"> 
+     <!-- slide_content를 감싸는 slide_list는 슬라이드를 모두 합한 넓이를 가져야 함-->
+     <!-- transform:translate3d()로 slide_list를 계속 움직여줘!! -->
+      <div class="slide_content slide01"> <!-- float：left로 딱 붙여 놓는다 -->
+       <p>1</p>
+      </div>
+      <div class="slide_content slide02">
+       <p>2</p>
+      </div>
+      <div class="slide_content slide03">
+       <p>3</p>
+      </div>
+       <div class="slide_content slide04">
+       <p>4</p>
+      </div>
+       <div class="slide_content slide05">
+       <p>5</p>
+      </div>
+     </div><!-- slide list -->
+    </div><!-- slide box -->
+    <div class="slide_btn_box">
+      <button type="button" class="slide_btn_perv">Prev</button>
+      <button type="button" class="slide_btn_next">Next</button>
+    </div><!-- slide_but_box -->
+    <ul class="slide_pagination"></ul> <!-- slide_pagination : 페이징, 페이지 매김 : 개별 페이지로 나누는 프로세스-->
+   </div><!-- slide_wrap  -->
+  </div><!-- container  -->
+</body>
+</html>

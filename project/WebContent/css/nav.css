@@ -1,0 +1,105 @@
+@charset "UTF-8";
+#main {width:1280px;}
+ul, ol, li {list-style:none; margin:0; padding:0;}
+ul.menu{}
+ul.menu > li{display:inline-block; width:30px; padding:5px 10px;
+             background: #eee; text-align:center;}
+ul.menu > li ul{display:none;}
+
+.at-navbar-item{float:right;}
+#modalLayer {
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	padding: auto;
+	}
+#modalLayer2 {
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	padding: auto;
+	}
+.login {
+    width: 330px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    border: solid black 1px;
+    border-radius: 5px; 
+    background-color: white;
+    font: 60.5%  "Lucida Grande", Verdana, Helvetica, sans-serif;
+    font-size:14px;    
+}
+.login_img{
+	float: left;width:30px; height:30px;
+}
+
+.btnLogin{
+	width: 330px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    margin-left: auto;
+    padding: auto;
+    border: solid black 1px;
+    border-radius: 5px; 
+    background-color: red;
+    color: white;
+    font: 60.5%  "Lucida Grande", Verdana, Helvetica, sans-serif;
+    font-size:14px;  
+}
+
+.login_box{
+	width: 330px;
+    height: 30px;
+    line-height: 28px;
+}
+.forget{
+	font-size:10px;
+	color: green;
+}
+.x {text-align:center;}
+#modalLayer{
+	display:none; 
+	position:relative;}
+#modalLayer .modalContent{
+	width:440px; 
+	height:400px; 
+	padding:20px; 
+	border:1px solid #ccc; 
+	position:fixed; 
+	left:50%; 
+	top:50%; 
+	z-index:11; 
+	background:#fff;
+	}
+#modalLayer2{
+	display:none; 
+	position:relative;}
+#modalLayer2 .modalContent2{
+	width:440px; 
+	height:400px; 
+	padding:20px; 
+	border:1px solid #ccc; 
+	position:fixed; 
+	left:50%; 
+	top:50%; 
+	z-index:11; 
+	background:#fff;
+	}
+#modalLayer3{
+	display:none; 
+	position:relative;}
+#modalLayer3 .modalContent3{
+	width:440px; 
+	height:400px; 
+	padding:20px; 
+	border:1px solid #ccc; 
+	position:fixed; 
+	left:50%; 
+	top:50%; 
+	z-index:11; 
+	background:#fff;
+	}
